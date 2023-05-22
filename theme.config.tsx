@@ -1,18 +1,41 @@
-import React from 'react'
-import { DocsThemeConfig } from 'nextra-theme-docs'
+import React from "react";
+import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <span>My Project</span>,
+  logo: <img src="/strapion.png" style={{ height: 32, width: "auto" }} />,
   project: {
-    link: 'https://github.com/shuding/nextra-docs-template',
+    link: "https://github.com/its-devtastic/strapion",
   },
   chat: {
-    link: 'https://discord.com',
+    link: "https://discord.com",
   },
-  docsRepositoryBase: 'https://github.com/shuding/nextra-docs-template',
+  docsRepositoryBase: "https://github.com/its-devtastic/strapion-docs",
   footer: {
-    text: 'Nextra Docs Template',
+    text: (
+      <div
+        style={{
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+        }}
+      >
+        <div>
+          MIT {new Date().getFullYear()} ©{" "}
+          <a href="https://github.com/its-devtastic/strapion" target="_blank">
+            Strapion
+          </a>
+          .
+        </div>
+        <div>
+          Build in Utrecht by{" "}
+          <a href="https://www.devtastic.build" target="_blank">
+            Devtastic
+          </a>
+        </div>
+      </div>
+    ),
   },
-}
+};
 
-export default config
+export default config;
