@@ -6,5 +6,5 @@ const withNextra = require("nextra")({
 module.exports = withNextra({
   output: "export",
   images: { unoptimized: true },
-  basePath: "/strapion-docs",
+  basePath: process.env.NODE_ENV === "production" ? "/strapion-docs" : "",
 });
